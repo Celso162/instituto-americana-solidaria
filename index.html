@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instituto Americana Solidária — projetos sociais, voluntariado e apoio à comunidade de Americana/SP.">
+  <meta name="theme-color" content="#0B4F6C">
+  <title>Instituto Americana Solidária</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Biblioteca externa usada somente como camada de feedback visual. -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Ir para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container cabecalho-interno">
+      <a class="marca" href="#inicio" data-rota="inicio" aria-label="Instituto Americana Solidária — página inicial">
+        <span class="marca-simbolo" aria-hidden="true">IAS</span>
+        <span>Instituto Americana Solidária</span>
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        aria-label="Abrir menu de navegação"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="menu-principal" class="menu-nav" aria-label="Navegação principal">
+        <a href="#inicio" data-rota="inicio">Início</a>
+        <a href="#projetos" data-rota="projetos">Projetos</a>
+        <a href="#cadastro" data-rota="cadastro">Seja voluntário</a>
+        <a href="#contato" data-rota="contato">Contato</a>
+      </nav>
+
+      <button
+        id="alternar-tema"
+        class="botao botao-secundario botao-tema"
+        type="button"
+        aria-pressed="false"
+        aria-label="Alternar entre modo claro e escuro"
+      >
+        <span aria-hidden="true">◐</span>
+        <span class="texto-tema">Tema</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="site-main" tabindex="-1"></main>
+
+  <div id="regiao-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <dialog
+    id="modal-confirmacao"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-titulo"
+    aria-describedby="modal-descricao"
+  >
+    <div class="modal-conteudo">
+      <h2 id="modal-titulo">Confirmar cadastro</h2>
+      <p id="modal-descricao">Deseja enviar o seu cadastro de voluntário?</p>
+      <div class="acoes-formulario">
+        <button type="button" class="botao botao-secundario" data-modal-fechar>Cancelar</button>
+        <button type="button" class="botao" id="confirmar-cadastro">Confirmar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-interno">
+      <p>&copy; 2026 Instituto Americana Solidária. Todos os direitos reservados.</p>
+      <a href="#inicio" data-rota="inicio">Voltar ao início</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="aviso-noscript">Esta aplicação precisa de JavaScript ativado para funcionar corretamente.</p>
+  </noscript>
+</body>
+</html>
