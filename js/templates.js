@@ -45,7 +45,7 @@ export function templateInicio() {
         </div>
         <div class="hero-imagem">
           <img
-            src="./imagens/voluntarios.jpg"
+            src="./imagens/voluntarios.webp"
             alt="Voluntários do Instituto Americana Solidária reunidos durante uma ação comunitária"
             width="1200"
             height="675"
@@ -83,7 +83,7 @@ export function templateProjetos() {
 
         <img
           class="imagem-destaque"
-          src="./imagens/projetos.jpg"
+          src="./imagens/projetos.webp"
           alt="Voluntária auxiliando uma criança em atividade educativa"
           width="1200"
           height="675"
@@ -107,7 +107,7 @@ export function templateCadastro() {
           <p>Preencha o formulário para demonstrar interesse em participar das ações do Instituto.</p>
           <img
             class="imagem-destaque"
-            src="./imagens/apoio.jpg"
+            src="./imagens/apoio.webp"
             alt="Mãos formando um coração, representando solidariedade e apoio"
             width="1200"
             height="675"
