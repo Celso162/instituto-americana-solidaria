@@ -232,6 +232,10 @@ a:hover {
   padding-inline: 12px;
 }
 
+[data-theme="dark"] .botao:not(.botao-secundario) {
+  color: #073B4C;
+}
+
 .site-main {
   min-height: 70vh;
 }
