@@ -281,6 +281,7 @@ a:hover {
 .hero-conteudo,
 .hero-imagem,
 .coluna-12,
+.coluna-6,
 .card-projeto {
   grid-column: span 12;
 }
